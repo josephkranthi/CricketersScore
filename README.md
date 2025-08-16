@@ -36,3 +36,20 @@ CREATE TABLE [dbo].[Cricketers](
     [score] INT NOT NULL,
 PRIMARY KEY CLUSTERED ([rank] ASC)
 );
+## 🌐 API Endpoints
+
+| Method | Endpoint             | Description                              |
+| ------ | -------------------- | ---------------------------------------- |
+| GET    | `/Cricketers`        | Get all cricketers                       |
+| GET    | `/Cricketers/{id}`   | Get a cricketer by ID                    |
+| POST   | `/Cricketers`        | Create a new cricketer (JSON body)       |
+| PUT    | `/Cricketers/{id}`   | Update an existing cricketer (JSON body) |
+| DELETE | `/Cricketers/{id}`   | Delete a cricketer by ID                 |
+
+### 📦 Example Request Body (POST / PUT)
+```json
+{
+  "rank": 1,
+  "name": "Virat Kohli",
+  "score": 95
+}
