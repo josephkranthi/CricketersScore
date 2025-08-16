@@ -65,7 +65,7 @@ To run the project, follow these steps:
 * Update appsettings.json with your SQL Server connection string.
 * Run the project → API runs on https://localhost:5001 or http://localhost:5000.
 * Frontend (Angular 17)
-  ``` cmd 
+  ``` text 
 cd ClientApp
 npm install
 ng serve -o
