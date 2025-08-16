@@ -36,6 +36,7 @@ CREATE TABLE [dbo].[Cricketers](
     [score] INT NOT NULL,
 PRIMARY KEY CLUSTERED ([rank] ASC)
 );
+```
 ## 🌐 API Endpoints
 
 | Method | Endpoint             | Description                              |
@@ -53,3 +54,18 @@ PRIMARY KEY CLUSTERED ([rank] ASC)
   "name": "Virat Kohli",
   "score": 95
 }
+```
+
+### 🚀 How to Run the Project
+To run the project, follow these steps:
+
+* Clone the repository - git clone https://github.com/<your-username>/TeacherProject.git
+* Open the project in Visual Studio 2019 or later.
+* Ensure that you have SQl Server installed and running on your machine.
+* Update appsettings.json with your SQL Server connection string.
+* Run the project → API runs on https://localhost:5001 or http://localhost:5000.
+* Frontend (Angular 17)
+cd ClientApp
+npm install
+ng serve -o
+Runs the Angular app at http://localhost:4200/.
