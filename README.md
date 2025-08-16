@@ -1,4 +1,4 @@
-# 🏏 Cricketers CRUD Management (Angular + .NET Core + SQL Server)
+# 🏏 Cricketers CRUD Management
 
 A **Full Stack Web Application** built with **Angular 18** (frontend) and **ASP.NET Core 8** (backend).  
 This project demonstrates CRUD operations, routing, service layer, and API integration with SQL Server.
