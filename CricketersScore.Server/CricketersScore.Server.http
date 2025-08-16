@@ -1,0 +1,46 @@
+@CricketersScore.Server_HostAddress = http://localhost:5108
+
+GET {{CricketersScore.Server_HostAddress}}/Cricketers
+
+Accept: application/json
+
+###
+
+###
+# Example POST Request
+###
+
+POST http://localhost:5108/Cricketers
+Content-Type: application/json
+
+{
+  "rank": 12,
+  "name": "player12",
+  "score": 111
+}
+
+###
+
+###
+# Example PUT Request
+###
+
+PUT http://localhost:5108/Cricketers/9
+Content-Type: application/json
+
+{
+  
+  "score": 29
+}
+
+###
+
+###
+# Example DELETE Request
+###
+
+DELETE http://localhost:5108/Cricketers/10
+Content-Type: application/json
+
+###
+

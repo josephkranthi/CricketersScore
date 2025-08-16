@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketersScore.Server", "CricketersScore.Server\CricketersScore.Server.csproj", "{89AEDBF6-2751-4347-A6F1-1B36F803C97A}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "cricketersscore.client", "cricketersscore.client\cricketersscore.client.esproj", "{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89AEDBF6-2751-4347-A6F1-1B36F803C97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AEDBF6-2751-4347-A6F1-1B36F803C97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AEDBF6-2751-4347-A6F1-1B36F803C97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AEDBF6-2751-4347-A6F1-1B36F803C97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A75441-DEDD-4679-B3AC-30D2FDD0B9FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56660FBC-1F66-4CA6-A41F-9EE6B7ADDB97}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,106 @@
+<h1 id="tableLabel">{{ title | uppercase }}</h1>  <!-- Title in UPPERCASE -->
+
+<p>This component demonstrates CRUD operations with ASP.NET Core backend.</p>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Add Player Form -->
+<div>
+  <h2>Add New Player</h2>
+  <form (submit)="addPlayer(); $event.preventDefault();">
+    <label>Rank: </label>
+    <input type="number" [(ngModel)]="newPlayer.rank" name="rank" required><br>
+
+    <label>Name: </label>
+    <input type="text" [(ngModel)]="newPlayer.name" name="name" required><br>
+
+    <label>Score: </label>
+    <input type="number" [(ngModel)]="newPlayer.score" name="score" required><br>
+
+    <button type="submit">Add Player</button>
+  </form>
+</div>
+
+<hr>
+
+<!-- Add Form R-->
+<!--<h2>Add Player</h2>
+<form [formGroup]="playerForm" (ngSubmit)="addPlayer()">
+  <label>Rank:</label>
+  <input type="number" formControlName="rank"><br>
+
+  <label>Name:</label>
+  <input type="text" formControlName="name"><br>
+
+  <label>Score:</label>
+  <input type="number" formControlName="score"><br>
+
+  <button type="submit" [disabled]="playerForm.invalid">Add</button>
+</form>
+
+<hr>-->
+<!-- Player List -->
+<table class="custom-table" border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of players; let i = index">
+      <td>{{ p.rank }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.score }}</td>
+      <td>
+        <button (click)="edit(i)">
+          <i class="material-icons">edit</i> Edit
+        </button>
+        <button (click)="deletePlayer(p.rank, i)">
+          <i class="material-icons">delete</i> Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- Edit Player Form -->
+<div *ngIf="showEditForm">
+  <h2>Edit Player</h2>
+  <form (submit)="updateItem(); $event.preventDefault();">
+    <label>Rank: </label>
+    <input type="number" [(ngModel)]="editedItem!.rank" name="editRank" [disabled]="isRankFieldDisabled()" required><br>
+
+    <label>Name: </label>
+    <input type="text" [(ngModel)]="editedItem!.name" name="editName" required><br>
+
+    <label>Score: </label>
+    <input type="number" [(ngModel)]="editedItem!.score" name="editScore" required><br>
+
+    <button type="submit">Update</button>
+    <button type="button" (click)="resetForm()">Cancel</button>
+  </form>
+</div>
+
+
+<!-- Edit Form R  -->
+<!--<div *ngIf="showEditForm">
+  <h2>Edit Player</h2>
+  <form [formGroup]="editForm" (ngSubmit)="updateItem()">
+    <label>Rank:</label>
+    <input type="number" formControlName="rank"><br>
+
+    <label>Name:</label>
+    <input type="text" formControlName="name"><br>
+
+    <label>Score:</label>
+    <input type="number" formControlName="score"><br>
+
+    <button type="submit" [disabled]="editForm.invalid">Update</button>
+    <button type="button" (click)="showEditForm=false">Cancel</button>
+  </form>
+</div>-->
